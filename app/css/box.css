@@ -1,0 +1,45 @@
+#container1 {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 960px;
+  margin: 20 auto;
+  padding: 20 auto;
+}
+
+#container1:hover { border: 10px solid black; }
+
+#container2 {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 860px;
+  margin: 20 auto;
+  padding: 20 auto;
+  background-color: gray;
+}
+
+#container1:hover { border: 15px solid black; }
+
+ul:hover { border: 5px solid black; margin:; -5px; }
+
+
+/*overriding bootstrap styles*/
+.list-group-item.bg-red {
+  background-color: red
+}
+
+.list-group-item.bg-blue {
+  background-color: blue
+}
+
+.list-group-item.bg-green {
+  background-color: green
+}
+
+.list-group-item.bg-highlight {
+  background-color: yellow
+}
+
+.split-para      { margin:3px;}
+.split-para span { float:right;margin-left:3px;}
+
+

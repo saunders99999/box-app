@@ -1,0 +1,20 @@
+  <div id='box' ng-repeat-start="item in box.boxesViewModel"></div>
+  <div class="{{item.numColumns | addColumnClass}}" ng-click="box.addBox(item.index)">
+    <ul class="list-group">
+      <li class="list-group-item {{item.background | addBackgroundClass}}">
+        <p class="split-para">
+          {{item.id | formatId}}
+          <span>
+            <button class="close" ng-click="box.removeBox(item.index); $event.stopPropagation();">&times;</button>
+          </span>
+        </p>
+      </li>
+      <li class="list-group-item {{item.background | addBackgroundClass}}">        
+        <p class="split-para">
+          {{item.leftBoxId | formatNeighborId}}
+          <span>{{item.rightBoxId | formatNeighborId}}</span>
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div ng-repeat-end></div>
