@@ -36,10 +36,7 @@ boxFilters.filter('addColumnClass', function() {
 // Map column size to bootstrap class
 boxFilters.filter('addBackgroundClass', function() {
   return function( colorId ) {
-  	if ( colorId === 1 ) {
-  		return '';
-  	}
-  	else if ( colorId === 2 ) {
+  	if ( colorId === 2 ) {
   		return 'bg-red';
   	}
   	else if ( colorId === 3 ) {
@@ -50,6 +47,9 @@ boxFilters.filter('addBackgroundClass', function() {
   	}
     else if ( colorId === 5 ) {
       return 'bg-highlight';
+    }
+    else {
+      return '';
     }
   };
 });

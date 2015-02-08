@@ -1,26 +1,17 @@
 #container1 {
-  box-sizing: border-box;
-  display: inline-block;
   max-width: 960px;
-  margin: 20 auto;
-  padding: 20 auto;
+}
+
+#container2 {
+  max-width: 860px;
 }
 
 #container1:hover { border: 10px solid black; }
-
-#container2 {
-  box-sizing: border-box;
-  display: inline-block;
-  max-width: 860px;
-  margin: 20 auto;
-  padding: 20 auto;
-  background-color: gray;
-}
-
-#container1:hover { border: 15px solid black; }
-
+#container2:hover { border: 15px solid black; }
 ul:hover { border: 5px solid black; margin:; -5px; }
 
+.split-para      { margin:3px;}
+.split-para span { float:right;margin-left:3px;}
 
 /*overriding bootstrap styles*/
 .list-group-item.bg-red {
@@ -39,7 +30,5 @@ ul:hover { border: 5px solid black; margin:; -5px; }
   background-color: yellow
 }
 
-.split-para      { margin:3px;}
-.split-para span { float:right;margin-left:3px;}
 
 

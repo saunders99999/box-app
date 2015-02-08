@@ -9,6 +9,7 @@ var boxApp = angular.module('boxApp', [
   'boxFilters'
 ]);
 
+// vary base routing
 boxApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.

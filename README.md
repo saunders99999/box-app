@@ -1,7 +1,7 @@
 # AngularJS Trial App
 
 ## Overview
-This is a test of Angular JS
+Trying out Angular JS
 
 - Run `npm install`
 - Run `npm start`
