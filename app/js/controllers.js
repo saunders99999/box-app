@@ -119,8 +119,24 @@ boxControllers.controller('BoxController', [
     // status
     this.deleteCount = deleteCount;
     this.lastDeleted = lastDeleted;
-    
+
     // behavior
+    this.addBorder = function() {
+        var elem1 = angular.element( document.querySelector( '#container1' ) ),
+            elem2 = angular.element( document.querySelector( '#container2' ) );
+
+        elem1.addClass( 'border1' );
+        elem2.addClass( 'border2' );
+    };
+
+    this.removeBorder = function() {
+        var elem1 = angular.element( document.querySelector( '#container1' ) ),
+            elem2 = angular.element( document.querySelector( '#container2' ) );
+
+        elem1.removeClass( 'border1' );
+        elem2.removeClass( 'border2' );
+    };
+    
     this.addBox = function( index ) {
         moreGray();
         this.boxCount++;

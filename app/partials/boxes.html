@@ -1,7 +1,7 @@
   <div id='box' ng-repeat-start="item in box.boxesViewModel"></div>
   <div class="{{item.numColumns | addColumnClass}}" ng-click="box.addBox(item.index)">
-    <ul class="list-group">
-      <li class="list-group-item {{item.background | addBackgroundClass}}">
+    <ul class="list-group" ng-mouseover="box.addBorder()" ng-mouseleave="box.removeBorder()">
+      <li class="list-group-item {{item.background | addBackgroundClass}}" >
         <p class="split-para">
           {{item.id | formatId}}
           <span>
